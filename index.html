@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Page Metadata -->
+        <title>6 Dice Game</title>
+        <link rel="icon" type="image/png" href="dice6.png"> 
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <!-- Main Container -->
+        <div class="container">
+            <!-- Game Title -->
+            <h1>6 Dice Game</h1>
+
+            <!-- Player Section -->
+            <div class="container1">
+                <p id="playerScore">Player: 0</p>
+                <div id="playerDice">
+                    <img id="playerDice0" src="dice1.png" onclick="toggleHold(true, 0)">
+                    <img id="playerDice1" src="dice1.png" onclick="toggleHold(true, 1)">
+                    <img id="playerDice2" src="dice1.png" onclick="toggleHold(true, 2)">
+                    <img id="playerDice3" src="dice1.png" onclick="toggleHold(true, 3)">
+                    <img id="playerDice4" src="dice1.png" onclick="toggleHold(true, 4)">
+                </div>
+                <p id="status1">Total: 5</p>
+            </div>
+
+            <!-- Computer Section -->
+            <div class="container1">
+                <p id="computerScore">Computer: 0</p>
+                <div id="computerDice">
+                    <img id="computerDice0" src="dice1.png">
+                    <img id="computerDice1" src="dice1.png">
+                    <img id="computerDice2" src="dice1.png">
+                    <img id="computerDice3" src="dice1.png">
+                    <img id="computerDice4" src="dice1.png">
+                </div>
+                <p id="status2">Total: 5</p>
+            </div>  
+
+            <!-- Game Controls -->
+            <div>
+                <button id="rollButton" onclick="rollDice()">Roll Dice</button>
+                <button onclick="resetGame()">Reset Dice</button>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
